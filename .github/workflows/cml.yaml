@@ -19,7 +19,7 @@ jobs:
         run: |
           # Your ML workflow goes here ok?
           pip install -r requirements.txt
-          python train.py  # generate plot.png
+          dvc repro
       - name: Create CML report
         env:
           REPO_TOKEN: ${{ secrets.REP_TOCKEN }}
