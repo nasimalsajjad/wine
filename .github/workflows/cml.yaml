@@ -22,7 +22,7 @@ jobs:
           python train.py  # generate plot.png
       - name: Create CML report
         env:
-          REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO_TOKEN: ${{ secrets.REP_TOCKEN }}
         run: |
           # Post CML report as a comment in GitHub
           echo "Model metrics" >> report.md
