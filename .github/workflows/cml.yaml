@@ -17,7 +17,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Train model
         run: |
-          # Your ML workflow goes here
+          # Your ML workflow goes here ok?
           pip install -r requirements.txt
           python train.py  # generate plot.png
       - name: Create CML report
