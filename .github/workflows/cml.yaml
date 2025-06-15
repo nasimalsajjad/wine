@@ -27,4 +27,5 @@ jobs:
           # Post CML report as a comment in GitHub
           echo "## Model metrics" > report.md
           cat metrics.txt >> report.md
+          cml-send-comment report.md
           
