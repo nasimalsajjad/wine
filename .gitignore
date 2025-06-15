@@ -1,2 +1,4 @@
 venv
 wine_quality.csv
+/metrics.txt
+/residuals.png

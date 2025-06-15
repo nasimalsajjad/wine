@@ -1,0 +1,22 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: python train.py
+    deps:
+    - path: train.py
+      hash: md5
+      md5: 8dd0a6e84c9c36c00099821d94aea041
+      size: 2794
+    - path: wine_quality.csv
+      hash: md5
+      md5: a24f92ea3e98d50517c8a9e37ceaa0ef
+      size: 102551
+    outs:
+    - path: metrics.txt
+      hash: md5
+      md5: 9b933f33ae24f9627d8ebc6e1690f040
+      size: 68
+    - path: residuals.png
+      hash: md5
+      md5: d0a7fcd31cdc3525b409391be88ee4f4
+      size: 44776

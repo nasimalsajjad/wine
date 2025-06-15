@@ -3,7 +3,7 @@ stages:
     cmd: python train.py
     deps:
       - train.py
-      - wine/wine_quality.csv.dvc
+      - wine_quality.csv
     outs:
       - metrics.txt
       - residuals.png
