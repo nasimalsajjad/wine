@@ -25,8 +25,5 @@ jobs:
           REPO_TOKEN: ${{ secrets.REP_TOCKEN }}
         run: |
           # Post CML report as a comment in GitHub
-          echo "Model metrics" >> report.md
-          cat metrics.txt >> report.md
-          echo '![](./plot.png)' >> report.md
-          cml comment create report.md
+          echo "Model metrics"
           
