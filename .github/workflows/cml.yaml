@@ -25,6 +25,6 @@ jobs:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # Post CML report as a comment in GitHub
+          echo "## Model metrics" > report.md
           cat metrics.txt >> report.md
-          echo '![](./plot.png "Confusion Matrix")' >> report.md
-          cml comment create report.md
+          
