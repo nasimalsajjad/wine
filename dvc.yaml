@@ -1,11 +1,13 @@
 stages:
   train:
-    cmd: python train.py
+    cmd : dvc run -n train \
+      -d train.py \
+      -d wine_quality.csv \
+      -o metrics.txt \
+      -o residuals.png \
+      python train.py
     deps:
-      - train.py
+      
       - wine_quality.csv
-    outs:
-      - metrics.txt
-      - residuals.png
 
   
